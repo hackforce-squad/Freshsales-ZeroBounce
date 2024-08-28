@@ -1,2 +1,1 @@
-# freshsales_zerobounce_integration
-Freshsales - ZeroBounce Integration
+# Freshsales - ZeroBounce Integration
