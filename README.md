@@ -12,7 +12,7 @@ Freshsales-ZeroBounce Integration runs in two scenarios,
 The marketplace application listens to any contact create or update events in your Freshsales account and then sends a request to ZeroBounce to check if the Email address entered in the default "Emails" field is valid or not. ZeroBounce analyzes the email address and then responds with a set of details as shown in below example,
 
 Consider the email address entered in the contact to be "james.sampleton@freshworks.com" then following will be the response from ZeroBounce,
-```json
+```javascript
 {"address"=>"james.sampleton@freshworks.com", "status"=>"catch-all", "substatus"=>"", "freeemail"=>false, "didyoumean"=>nil, "account"=>"jamessampleton", "domain"=>"freshworks.com", "domainagedays"=>"9691", "smtpprovider"=>"g-suite", "mxfound"=>"true", "mxrecord"=>"aspmx.l.google.com", "firstname"=>"james", "lastname"=>"sampleton", "gender"=>"male", "country"=>nil, "region"=>nil, "city"=>nil, "zipcode"=>nil, "processedat"=>"2024-08-26 12:18:56.333"}
 ```
 
