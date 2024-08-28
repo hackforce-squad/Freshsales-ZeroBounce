@@ -57,17 +57,14 @@ ZeroBounce validates each email address and the status value helps us in determi
   **Unknown** - ZeroBounce is not sure about this email address and its more likely to be invalid.
 
 More information about ZeroBounce status codes can be seen in the below document,
-
 https://www.zerobounce.net/docs/email-list-validation/status-codes/
 
 ## Do I need credits in ZeroBounce?
 Yes, you will need to have credits in ZeroBounce for this integration to work. By default, ZeroBounce offers 100 free credits and their pricing can be check in the below page,
-
 https://www.zerobounce.net/email-validation-pricing/
 
 ## Do I need to have a paid plan in Freshsales?
 Yes, Freshsales offers APIs in paid plans only and so you will need a paid plan in Freshsales. Following article has information about the API limits in each plan,
-
 https://crmsupport.freshworks.com/support/solutions/articles/50000005599-does-the-web-application-have-api-request-limits-for-an-account-
 
 # How to get my API key in ZeroBounce?
