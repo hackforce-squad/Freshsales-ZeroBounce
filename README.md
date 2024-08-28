@@ -13,7 +13,25 @@ The marketplace application listens to any contact create or update events in yo
 
 Consider the email address entered in the contact to be "james.sampleton@freshworks.com" then following will be the response from ZeroBounce,
 ```javascript
-{"address"=>"james.sampleton@freshworks.com", "status"=>"catch-all", "substatus"=>"", "freeemail"=>false, "didyoumean"=>nil, "account"=>"jamessampleton", "domain"=>"freshworks.com", "domainagedays"=>"9691", "smtpprovider"=>"g-suite", "mxfound"=>"true", "mxrecord"=>"aspmx.l.google.com", "firstname"=>"james", "lastname"=>"sampleton", "gender"=>"male", "country"=>nil, "region"=>nil, "city"=>nil, "zipcode"=>nil, "processedat"=>"2024-08-26 12:18:56.333"}
+{"address"=>"james.sampleton@freshworks.com",
+"status"=>"catch-all",
+"substatus"=>"",
+"freeemail"=>false,
+"didyoumean"=>nil,
+"account"=>"jamessampleton",
+"domain"=>"freshworks.com",
+"domainagedays"=>"9691",
+"smtpprovider"=>"g-suite",
+"mxfound"=>"true",
+"mxrecord"=>"aspmx.l.google.com",
+"firstname"=>"james",
+"lastname"=>"sampleton",
+"gender"=>"male",
+"country"=>nil,
+"region"=>nil,
+"city"=>nil,
+"zipcode"=>nil,
+"processedat"=>"2024-08-26 12:18:56.333"}
 ```
 
 The primary information in this response is the "status" value. This status value is stored in a custom text field in the contacts module in Freshsales. The other details are added as a note in the respective contact record for reference.
