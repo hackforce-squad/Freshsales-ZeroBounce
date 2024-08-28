@@ -6,7 +6,9 @@ This integration helps in identifying whether the contacts in Freshsales have a 
 
 ## How this integration works?
 Freshsales-ZeroBounce Integration runs in two scenarios,
+
 1) Whenever a new contact is created in Freshsales.
+   
 2) Whenever the default Emails field in Freshsales is updated in a contact.
 
 The marketplace application listens to any contact create or update events in your Freshsales account and then sends a request to ZeroBounce to check if the Email address entered in the default "Emails" field is valid or not. ZeroBounce analyzes the email address and then responds with a set of details as shown in below example,
@@ -38,12 +40,19 @@ The primary information in this response is the "status" value. This status valu
 
 ## What is status in ZeroBounce Email Validation?
 ZeroBounce validates each email address and the status value helps us in determining if we should be sending emails to the respective email address or not. Following are status codes in ZeroBounce,
+
   **Valid** - The email address is valid and the bounce rate is minimal. 
+  
   **Invalid** - Emails sent to email addresses with status as Invalid will most likely bounce.
+  
   **Catch-all** - Its difficult to identify if these emails are valid or not and we can only determine its validity by sending an email. If you want to send emails to them then do so by creating a separate list of catch-all email addresses.
+  
   **Spamtrap** - Avoid sending emails to them.
+  
   **Abuse** - Avoid sending emails to them.
+  
   **Do_not_mail** - Valid email addresses but should not be emailed.
+  
   **Unknown** - ZeroBounce is not sure about this email address and its more likely to be invalid.
 
 More information about ZeroBounce status codes can be seen in the below document,
