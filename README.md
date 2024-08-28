@@ -14,6 +14,7 @@ Freshsales-ZeroBounce Integration runs in two scenarios,
 The marketplace application listens to any contact create or update events in your Freshsales account and then sends a request to ZeroBounce to check if the Email address entered in the default "Emails" field is valid or not. ZeroBounce analyzes the email address and then responds with a set of details as shown in below example,
 
 Consider the email address entered in the contact to be "james.sampleton@freshworks.com" then following will be the response from ZeroBounce,
+
 ```javascript
 {"address"=>"james.sampleton@freshworks.com",
 "status"=>"catch-all",
@@ -56,14 +57,17 @@ ZeroBounce validates each email address and the status value helps us in determi
   **Unknown** - ZeroBounce is not sure about this email address and its more likely to be invalid.
 
 More information about ZeroBounce status codes can be seen in the below document,
+
 https://www.zerobounce.net/docs/email-list-validation/status-codes/
 
 ## Do I need credits in ZeroBounce?
 Yes, you will need to have credits in ZeroBounce for this integration to work. By default, ZeroBounce offers 100 free credits and their pricing can be check in the below page,
+
 https://www.zerobounce.net/email-validation-pricing/
 
 ## Do I need to have a paid plan in Freshsales?
 Yes, Freshsales offers APIs in paid plans only and so you will need a paid plan in Freshsales. Following article has information about the API limits in each plan,
+
 https://crmsupport.freshworks.com/support/solutions/articles/50000005599-does-the-web-application-have-api-request-limits-for-an-account-
 
 # How to get my API key in ZeroBounce?
@@ -84,6 +88,7 @@ Your Freshsales domain is a part of your Freshsales account URL. For example, if
 
 ## How to create a custom text field in contacts module in Freshsales?
 A custom text field in the contacts module can be created by following the below steps,
+
 1) Go to Admin settings in your Freshsales account and click on Contacts,
 
   ![image](https://github.com/user-attachments/assets/ab83491a-ec7c-4216-9d0c-931ce6f5f88c)
@@ -102,6 +107,7 @@ A custom text field in the contacts module can be created by following the below
    ![image](https://github.com/user-attachments/assets/e418b370-8c93-4223-bf2f-1c6c9bbcb431)
 
 5) Copy the internal name for that field and paste it in the app installation settings. For example if your field label is "ZeroBounce status" then the custom field internal name will be "cf_zerobounce_status".
+   
 Note - The internal name does not change. So if you change the field label then the internal name will not change it will remain the same on how it was created initially.
 
 ## Why should I create a custom text field in Freshsales?
@@ -110,4 +116,4 @@ A custom text field is required to store the "status" value under the respective
 ## What happens if I enter an incorrect internal field name for the text field or do not create one?
 If you enter an incorrect internal field name or place a dummy value in this field then the status value will not be stored in any contact field and you will not be able to filter or export contacts based on ZeroBounce email validation. The overall response from ZeroBouce will still be displayed under notes.
 
-## For Support drop an email to pulkit.chowdry@freshworks.com
+## For Support, drop an email to pulkit.chowdry@freshworks.com
