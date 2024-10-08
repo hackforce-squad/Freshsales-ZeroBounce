@@ -113,4 +113,7 @@ A custom text field is required to store the "status" value under the respective
 ## What happens if I enter an incorrect internal field name for the text field or do not create one?
 If you enter an incorrect internal field name or place a dummy value in this field then the status value will not be stored in any contact field and you will not be able to filter or export contacts based on ZeroBounce email validation. The overall response from ZeroBouce will still be displayed under notes.
 
+## Limitation
+In case of bulk import through CSV when a high number of records are created within a minute, the app at the moment is not updating the field for all records as backend platform limits are being breached. We are working on a solution to fix this scenario. 
+
 ## For Support, drop an email to pulkit.chowdry@freshworks.com
