@@ -116,7 +116,7 @@ If you enter an incorrect internal field name or place a dummy value in this fie
 ## Limitation
 This app uses Freshsales and ZeroBounce APIs to validate the email addresses of contacts in Freshsales and so there are certain product and platform limits within which the app needs to operate. In case of bulk CSV import or situations where a high number of contacts are created within a minute, then there are chances that the updates do not reflect for certain contacts. By default, the app has a retry mechanism which allows a failed request to be attempted upto 10 times (orginal request + 9 retries) where the interval between each retry is a minimum of 5 minutes. So, in this scenario there can either be a delay in the contact being updated or some contacts being missed. This application can handle approximately 160 contacts being created in the same minute. In case the app needs to validate email addresses of more than 160 contacts being created within a minute, then kindly drop an email to pulkit.chowdry@freshworks.com with the account details and the frequency of such CSV imports. 
 
-Note - Default limit is 50 requests per minute (17 contacts) and through retry mechanism the app can process upto 160 contacts which have been created in a minute.
+Note - Default limit is 50 requests per minute (17 contacts for this app) and through retry mechanism the app can process upto 160 contacts which have been created in a minute.
 
 If contacts are created/updated in separate batches with a difference of a few seconds between each request then there won't be any issues as the app can handle 16 new requests each minute without any delays.
 
